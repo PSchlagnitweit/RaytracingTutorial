@@ -1422,7 +1422,7 @@ void D3D12HelloTriangle::CreateMengerSpongeVB() {
   std::vector<Vertex> vertices;
   std::vector<UINT> indices;
 
-  nv_helpers_dx12::GenerateMengerSponge(1, 0.75, vertices, indices); //Change: maximum 4
+  nv_helpers_dx12::GenerateMengerSponge(0, 0.75, vertices, indices); //Change: maximum 4
   {
     const UINT mengerVBSize =
         static_cast<UINT>(vertices.size()) * sizeof(Vertex);
